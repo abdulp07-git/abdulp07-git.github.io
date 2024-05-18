@@ -1,0 +1,530 @@
+/**
+
+Flex placing
+https://www.youtube.com/watch?v=K74l26pE4YA
+
+*/
+
+body{
+    background-color: #fff;
+}
+
+.ccolor{
+    background: linear-gradient(to bottom, #f1f1f1, #ffffff);
+}
+
+.apparea{
+    background-color: #f0f0f5;
+}
+
+.footercolor{
+    background-color: #02060c;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    
+}
+.page_boundry{
+   height: 100%;
+   /*border: 1px solid black;*/
+   margin-left: 150px;
+   margin-right: 150px;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    /*border: 1px solid black;*/
+}
+
+.hview{
+    display: flex;
+    flex: 1;
+    
+
+}
+.hnav{
+    display: flex;
+    flex: 1;
+    /*border: 1px solid black;*/
+    align-items: center;
+}
+.hlogo{
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex: 0 0 auto;
+    /*border: 1px solid black;*/
+}
+.h_other{
+    flex: 0 0 auto;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 100px;
+    color: #686b78;
+    /*border: 1px solid black;*/
+
+
+
+}
+
+
+.other-button{
+    padding: 10px;
+    font-size: 14px;
+    width: 75px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.logo_color{
+    color: #f56910;
+}
+
+
+
+.menus{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 148px;
+    /*border: 1px solid black;*/
+    
+
+}
+.headerul {
+    list-style: none;
+    text-align: center;
+}
+
+.headerli{
+    display: inline-block;
+    /*margin-right: 50px;*/
+    margin-left: 50px;
+}
+.li_container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.li_left{
+    flex: 0 0 auto;
+    
+    margin-right: 5px;
+    align-items: center;
+    
+}
+.li_right{
+    flex: 0 0 auto;
+    margin-top: 3px;
+    margin-right: 5px;
+    align-items: center;
+    
+}
+
+
+.banner{
+    position: relative;
+    height: 400px;
+    /*border: 1px solid black;*/
+}
+
+.menu_font{
+    text-decoration: none;
+    font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+}
+
+a:visited {
+    color: inherit;
+}
+/**
+.liright{
+    margin-left: 2px;
+}
+*/
+
+
+
+.headerli{
+    color: #3d4152;
+}
+
+/** Header section finished */
+
+/**Banner starts */
+
+
+.tag_button_container{
+    /*border: 1px solid black;*/
+    background: linear-gradient(to bottom, #f1f1f1, #ffffff);
+    height: 130px;
+}
+.tag_button{
+    display: flex;
+
+    align-items: center;
+    
+}
+
+.tag{
+
+    font-family: Basis_Grotesque_Pro;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(2, 6, 12, 0.92);
+    letter-spacing: -0.4px;
+    flex: 0 0 91.5%;
+    
+}
+
+
+.lr_button{
+    
+    flex: 1 0;
+    align-items: center;
+    margin-left: auto;
+    height: 50px;
+    
+}
+
+.round-button{
+    border-radius: 75%;
+    background-color: #e1e1e6;
+    gap: 30px;
+    width: 40px;
+    margin-top: 3px;
+    margin-left: 3px;
+    height: 80%;
+    font-size: large;
+    border: none;
+}
+
+
+
+.banner_image_container{
+    display: flex;
+    overflow: hidden;
+    margin-left: 75px;
+    margin-right: 75px;
+    /*border: 1px solid black;*/
+   
+    
+}
+
+.bimage{
+    flex: 0 0 14.285%;
+    object-fit: cover;
+    /**border: 1px solid black;*/
+    align-items: center;
+
+}
+.bimage img{
+    width: 150px;
+    object-fit: cover;
+    
+}
+
+/**Banner finished*/
+
+
+/**To restaurents start */
+
+.top_rest_root{
+    height: 100%;
+    /*border: 1px solid black;*/
+}
+
+
+.top_rest_image_container{
+    display: flex;
+    margin-top: 75px;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid black;*/
+}
+
+.tr_image_description {
+    flex: 1;
+    align-items: center;
+    /**border: 1px solid black;*/
+}
+
+.tr_image{
+    margin-left: 35px;
+    border-radius: 10px;
+    width: 250px;
+    height: 150px
+}
+.tr_description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    text-align: left;
+    /**border: 1px solid black;*/
+}
+.rest_description_font{
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+    font-family: Basis_Grotesque_Pro_Bold;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.75);
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+
+
+.rest-time-star{
+    /**border: 1px solid black;*/
+    text-align: justify;
+}
+
+.rest_name{
+    margin-bottom: 5px;
+
+}
+
+.rest_time{
+    margin-bottom: 5px;
+}
+
+.rest_item{
+    margin-bottom: 5px;
+}
+
+.rest_loc{
+    margin-bottom: 5px;
+}
+
+/**top restaurents finish */
+
+
+
+/**Online Start*/
+
+.online_container{
+    
+    /*border: 1px solid black;*/
+}
+
+.tag_online{
+    margin-top: 35px;
+    width: 100%;
+    font-weight: 500;
+    font-family: Basis_Grotesque_Pro;
+    /*border: 1px solid black;*/
+}
+
+.filter_grid{
+    position: sticky;
+    top: 0px;
+    margin-top: 70px;    
+}
+
+.btn_filter{
+    margin-right: 30px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.online_table{
+    margin-top: 70px;
+}
+
+
+.button_table{
+    margin-top: 20px;
+    /*border: 1px solid black;*/
+}
+
+
+.restaurant-button {
+    padding: 10px;
+    font-size: 14px;
+    width: 280px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px  ;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.restaurant-button:hover {
+    background-color: #f7f7f7;
+    border-color: #ccc;
+}
+
+.restaurant-button span {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.explore{
+    display: flex;
+}
+
+.explore_left{
+    flex: 1;
+    /*border: 1px solid black;*/
+}
+
+.explore_right{
+    flex: 1;
+    /*border: 1px solid black;*/
+}
+
+.explore-button{
+    padding: 10px;
+    font-size: 14px;
+    width: 607px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px  ;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Online end here */
+/*app start here */
+
+.app_container{
+    display: flex;
+    margin-top: 150px;
+    height: 100px;
+    /*border: 1px solid black;*/
+}
+
+.app_left {
+    flex: 1;
+    justify-content: center;
+    align-items: center;  
+    /*border: 1px solid black;*/
+    
+}
+
+.app_right{
+    flex: 1;
+    /*border: 1px solid black;*/
+}
+
+.play_img{
+    width: 160px;
+    height: 50px;
+}
+
+.app_img{
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+}
+
+.app_h2{
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-right: 40px;
+}
+/*app end here */
+
+/*footer start here*/
+
+.footer{
+    height: 500px;
+    display: flex;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.footer_left{
+    display: flex;
+    flex: 0 0 33%;
+    border: 1px solid black;
+}
+
+.footer_right{
+    flex: 67%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+
+.f_th{
+    width: 200px;
+    height: 20px;
+    text-align: left;
+    color: #f7f7f7;
+}
+.f_td{
+    width: 200px;
+    height: 20pxpx;
+    color: #f7f7f7;
+    
+}
+
+.about_table{
+    margin-top: 35px;
+}
+
+.about_table_a{
+    text-decoration: none;
+}
+
+
+.f_logo_tag_container{
+    margin-top: 35px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_logo_tag{
+    
+    -webkit-font-smoothing: antialiased;
+    font-family: Basis_Grotesque_Pro;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    color: rgba(255, 255, 255, 0.92);
+    margin-left: 10px;
+}
+
+.f_logo{
+    margin-left: 250px;
+    /*border: 1px solid rgb(235, 229, 229);*/
+}
+
+.footer_logo_cap{
+    flex: 1;
+    color: #f7f7f7;
+    /*border: 1px solid rgb(236, 229, 229);*/
+    margin-left: 250px;
+}
+
