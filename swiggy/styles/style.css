@@ -141,22 +141,19 @@ body{
 
 .menu_font{
     text-decoration: none;
+    color: #3d4152;
     font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
 }
 
 .menu_font:visited{
-    color: #3d4152;;
+    color: #3d4152;
 }
 
-/*
-a:visited {
-    color: inherit;
-}*/
-/**
-.liright{
-    margin-left: 2px;
+.menu_font:hover{
+    color: #f56910;
+    
 }
-*/
+
 
 
 
@@ -535,11 +532,17 @@ a:visited {
 
 .about_table_a{
     text-decoration: none;
+    color: rgba(255, 255, 255, 0.92);
 }
 
 .about_table_a:visited{
     color: rgba(255, 255, 255, 0.92);
 }
+
+
+.about_table_a:hover{
+    color: #f56910;
+  }
 
 
 .f_logo_tag_container{
@@ -633,9 +636,7 @@ a:visited {
     transform: scale(0.90); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 
-  a:hover{
-    color: #f56910;
-  }
+
 
   .round-button:hover{
     background-color: #f56910;
