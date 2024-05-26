@@ -1,0 +1,28 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.row {
+    height: 100%;
+    
+}
+
+body{
+    
+}
+
+
+
+a {
+    color: black;
+}
+
+a:visited{
+    color: inherit;
+}
+
+.custom-logo {
+    max-height: 75px; /* Adjust this value as needed */
+    max-width: 80%;
+}
